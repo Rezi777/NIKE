@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nike.ge</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+    *{margin: 0;
+    	padding: 0;
+    	font-family: sans-serif;}
+    body{background-color: #E1E1E1;
+    cursor: default; }
+
+    	.banner{position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        animation: animate 20s ease-in-out infinite;
+        background-size: cover;
+    		}
+
+        @keyframes animate {
+          0%,100%{background-image: url(gg.jpg);}
+          25%{background-image: url(af1.jpg);}
+          50%{background-image: url(aj.jpg);}
+          75%{background-image: url(sb.jpg);}
+
+        }
+
+        .navbar{
+        	width: 85%;
+        	margin: auto;
+        	padding:15px 0;
+        	display: flex;
+        	align-items: center; 
+        	justify-content: space-between;
+        }
+
+        .logo{
+          position: absolute;
+          top: 30px;
+          width: 120px;
+        	cursor: default;
+        }
+ 
+        	.navbar ul li{
+            position: absolute;
+            top: 10px;
+            left: 700px;
+        		list-style: none;
+        		display: inline-block;
+        		margin: 0 20px;
+        		position: relative;
+            text-decoration: none;
+
+        	}
+
+         .navbar ul li a{text-decoration: underline;
+          text-decoration-color:  #009688;
+      
+                     color:#fff;
+                     text-transform: uppercase;
+
+                         }
+
+          .navbar ul li::after {
+          	content'';
+          	height: 3px;
+          	width: 0;
+          	background: #009688;
+          	position: absolute;
+          	left: 0;
+          	bottom:10px;
+          	transition:0.5s;
+          	
+          }
+          .navbar ul li:hover::after{
+          	width: 100%
+          }
+
+          .content{position: absolute;
+            left: 300px;
+          	width: 65%;
+          	position: absolute;
+          	top: 50%;
+          	transform: translateY(-50%);
+          	text-align: center;
+          	color: white;
+            text-decoration: none;
+            
+          }
+
+          .content h1{
+          	font-size: 100px;
+          	cursor: default;
+            color: white;
+            cursor: default;
+             font-family: "Lucida Console", "Courier New", monospace;
+            
+            
+
+          }
+
+          .content p{
+          	font-size: 50px;
+          	font-family: "Gill Sans", sans-serif;
+          	cursor: default;
+            color:white;
+            text-decoration: none;
+            
+
+          }
+
+          .Shop{
+          	
+          	position: absolute;
+          	left: 100px;
+          	top: 104%;
+          	text-align: center;
+          	color: black;
+          	font-size: 40px;
+          	background-image:linear-gradient(125deg, #009688, #000000);
+          	color: white;
+          	border-bottom-left-radius: 15px;
+            	border-bottom-right-radius:15px;
+            	border-top-left-radius: 15px;
+            	border-top-right-radius: 15px;
+            	cursor: default;
+
+          }
+
+          .information{
+          	width: 100%;
+          	position: absolute;
+          	top: 115%;
+            left: 35%;
+          	text-align: left;
+          	color:black;
+          	cursor: default;
+            font-family: serif;
+            font-size: 22px;
+
+          }
+
+          .link{color: white;}
+
+           
+
+            button{
+              position: absolute;
+              top: 60%;
+              left: 800px;
+            	width: 200px;
+            	padding: 15px 0;
+            	text-align: center;
+            	margin:20px 10px;
+            	border-radius: 25px;
+            	font-weight: bold;
+            	border:2px solid #009688;
+            	background: transparent; 
+            	color: #fff; 
+            	cursor: pointer;
+            }
+
+            #location{position: absolute;
+            	left: 50%;
+            	transform: translateX(-50%);
+            	top: 185%;
+            	font-size: 50px;
+            	color: white;
+            	background-image:linear-gradient(125deg, #009688, #000000);
+            	border-bottom-left-radius: 15px;
+            	border-bottom-right-radius:15px;
+            	border-top-left-radius: 15px;
+            	border-top-right-radius: 15px;
+            	cursor: default;
+
+
+            	
+            	
+            
+            	
+            }
+
+            #first{
+
+            	position: absolute;
+            	top: 195%;
+            	color: black;
+            	font-size: 25px;
+            	left: 260px;
+            	font-family: 'Anton', sans-serif;
+            	cursor: default;
+            	text-decoration-line: underline;
+            	text-decoration-style: double;
+            	text-decoration-color: gray;
+
+
+            }
+
+            #map1{
+            	position: absolute;
+            	top: 195%;
+            	width: 100%;
+            	text-align: right;
+            	right: 50px;
+            	cursor: default;
+
+            }
+
+            .contact{
+            	position: absolute;
+            	top: 205%;
+            	color: black;
+            	left: 260px;
+            	text-decoration-line: underline;
+            	text-decoration-color:gray;
+            	cursor: default;}
+
+            
+
+            .fa {
+                padding: 15px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+               border-radius: 50%;}
+            
+
+            .fa:hover {
+            opacity: 0.9;}
+
+ 
+            .fa-facebook {
+            background: black;
+            color: white;
+            position: absolute;
+            top: 222%;
+            left: 250px;}
+                      
+            .fa-instagram {
+           background: black;
+           color: white;
+           position: absolute;
+           left: 315px;
+           top: 222%;}
+
+           .fa-youtube {
+           background:black;
+           color: white;
+           position: absolute;
+           top: 222%;
+           left: 380px;
+       }
+
+       #firstmodeljpg{
+        position: absolute;
+        top: 120%;
+        border-radius: 50%;
+        width: 469px;
+        height: 469px;
+        left: 100px;
+       }
+
+       .gradiet{
+        position: absolute;
+        top: 112%;
+        left: 410px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image:linear-gradient(125deg, #009688, #9b2b35);
+       }
+
+       #firstphoto{
+        position: absolute;
+        top: 119%;
+        width: 160px;
+        height: 62px;
+        left: 435px;
+       }
+
+       .formen{
+        position: absolute;
+        top: 128%;
+        left: 67%;
+        background-image:linear-gradient(125deg, #009688, #000000);
+        color: white;
+        border-bottom-left-radius: 15px;
+              border-bottom-right-radius:15px;
+              border-top-left-radius: 15px;
+              border-top-right-radius: 15px;
+              font-size: 40px;
+
+       }
+
+       .gradiet1{
+        position: absolute;
+        top: 134%;
+        left: 70%;
+        width: 479px;
+        height: 479px;
+        border-radius: 50%;
+        background-image:linear-gradient(125deg, #634d55, #9b2b35);
+       }
+
+       #secondphoto{position: absolute;
+        top: 136%;
+        width: 501px;
+        height: 358px;
+        left: 71%;}
+
+        .information1{position: absolute;
+          top: 150%;
+          left: 36%;
+          font-family: serif;
+            font-size: 22px;
+        }
+                        
+
+           
+                       
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+          
+
+
+</style>
+<body>
+	<div class="banner">
+		
+      
+		</div>
+    <button type="button"><span></span><a href="https://www.nike.com" class="link">SHOP NOW</button>
+	
+
+  <div class="content">
+      <h1>NIKE</h2>
+      <p>Just Do It</p>
+      
+        
+      </div>
+
+  <div class="navbar">
+      <img src="new.jpg" class="logo">
+     <ul>
+      <li><a href="#">AF1</li>
+      <li><a href="#">JORDAN</li>
+      <li><a href="#">NIKE SB</li>
+     </ul>  
+    </div>
+
+
+	<h1 class="Shop">NIKE PRO COLLECTION</h1>
+
+	<h3 class="information">The Nike Pro Women's Tank features a cropped cut that's <br> great for layering or wearing solo. Its mesh back panel helps<br>keep you cool, while its chest band features a stylish cross-over<br> design for a secure, comfortable fit.</h3>
+	<img src="c.jpg" id="firstmodeljpg">
+  <div class="gradiet"></div><img src="new.jpg" id="firstphoto" >
+
+	<h2 id="location">Find Nike Store In Tbilisi</h2>
+
+	<p id="first"> TBILISI-Vazha-fshavela avenue  N8</p>
+	<p id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47650.19904528474!2d44.759801138952575!3d41.71755299206105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cef6a1e3849%3A0xbd891b1b57658289!2z4YOc4YOQ4YOY4YOZ4YOY!5e0!3m2!1ska!2sge!4v1632758698961!5m2!1ska!2sge" width="1000" height="500" style="border:4px solid #009688 ;" allowfullscreen="" loading="lazy"></iframe></p>
+	<div class="contact">
+		<h2>Contact Us</h2><br>
+		<p>PRODUCTS & ORDERS</p><br>
+		<p>1-800-806-6453</p><br>
+		<p>4 am - 11 pm</p>
+	</div>
+
+<a href="https://www.facebook.com/nike" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/nike/" class="fa fa-instagram"></a>
+<a href="https://www.youtube.com/c/nike" class="fa fa-youtube"></a>
+
+
+<h1 class="formen">NIKE REACT 2 COLLECTION</h1>
+<h3 class="information1">Two styles of graphics are used to represent this throughout the<br> collection: The first is a traditional geometric quilt pattern that is<br> influenced by all 12 Chinese Zodiac symbols; the second is a<br> mosaic pattern of the 12 symbols.</h3>
+  <div class="gradiet1"></div><img src="shoes.jpg" id="secondphoto">
+
+	
+	
+</body>
+</html> 
